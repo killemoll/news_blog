@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Тема</strong>
+  <%= @post.tittle %>
+</p>
+
+<p>
+  <strong>Тело новости</strong>
+  <%= @post.content %>
+</p>
+
+<%= link_to 'Изменить', edit_post_path(@post) %> |
+<%= link_to 'Назад', posts_path %>
